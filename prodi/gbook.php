@@ -39,7 +39,6 @@ include("../koneksi.php");
               <label for="jenjang" class="form-label">Jenjang</label>
               <select class="form-select" id="jenjang" name="jenjang" required>
                   <option value="" selected disabled>Pilih Jenjang</option>
-                  <!-- PERBAIKAN: Gunakan huruf besar sesuai ENUM -->
                   <option value="D2">D2</option>
                   <option value="D3">D3</option>
                   <option value="D4">D4</option>

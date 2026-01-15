@@ -38,6 +38,15 @@ if (!$data) {
 }
 ?>
 
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+  header("Location: ../User/login.php");
+  exit;
+}
+?>
+
+
 <!doctype html>
 <html lang="id">
   <head>

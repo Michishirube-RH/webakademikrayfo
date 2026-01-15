@@ -1,6 +1,17 @@
 <?php
 include("../koneksi.php");
 ?>
+
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+  header("Location: ../User/login.php");
+  exit;
+}
+?>
+
+
+
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <ul class="nav justify-content-end">
             <li class="nav-item">

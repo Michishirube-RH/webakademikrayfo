@@ -1,6 +1,7 @@
 <?php
 include("../koneksi.php");
 
+
 // PROSES UPDATE
 if (isset($_POST['Submit'])) {
     $nim = $_POST['nim'];
@@ -25,6 +26,15 @@ if (isset($_POST['Submit'])) {
     }
 }
 ?>
+
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+  header("Location: ../User/login.php");
+  exit;
+}
+?>
+
 
 <select class="form-select" name="prodi_id">
     <option value="">-- Pilih Prodi --</option>
